@@ -43,6 +43,7 @@ header button {
     border: none;
     background: none;
     width: fit-content;
+    cursor: pointer;
 }
 
 header nav.mobile{
@@ -79,33 +80,8 @@ header .mobile a   {
     line-height: 1.5rem;
 }
 
-main {
-    max-width: 1110px;
-    margin-inline: auto;
-}
-
-.primeira-secao {
-    margin-bottom: 4rem;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.75rem;
-}
-
-.primeira-secao picture{
-    grid-column: 1/3;
-}
-
-.primeira-secao picture img{
-    margin: 0;
-} 
-
-.primeira-secao h1{
-    font-size: 3.5rem;
-} 
-
-.segunda-secao h2{
-    font-size: 2.5rem;
+header .desktop{
+    display: none;
 }
 
 .primeira-secao img {
@@ -196,6 +172,10 @@ main {
     margin-block: 0.6rem;
 }
 
+.terceira-secao a {
+    text-decoration: none;
+}
+
 .terceira-secao p {
     color: var(--gunmetal);
     font-size: 0.937rem;
@@ -229,5 +209,53 @@ main {
         line-height: 1.625rem;
         text-decoration: none;
         color: var(--gunmetal);
+        cursor: pointer;
+    }
+
+    header .desktop a:hover{
+        color: var(--vermillion);
+    }
+
+    main {
+        max-width: 1110px;
+        margin-inline: auto;
+    }
+    
+    .primeira-secao {
+        margin-bottom: 4rem;
+    
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
+    }
+    
+    .primeira-secao picture{
+        grid-column: 1/3;
+    }
+    
+    .primeira-secao picture img{
+        margin: 0;
+    } 
+    
+    .primeira-secao h1{
+        font-size: 3.5rem;
+    } 
+    
+    .primeira-secao button:hover{
+        background-color: var(--dark-blue);
+        cursor: pointer;
+    }
+    
+    .segunda-secao h2{
+        font-size: 2.5rem;
+    }
+    
+    .terceira-secao {
+        display: flex;
+        grid-column: 1/4;
+       } 
+    
+    .terceira-secao h2:hover{
+        color: var(--vermillion);
     }
 }
